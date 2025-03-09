@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffd700;
+}
+
+/* Header & Main Container */
+header,
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Introduction Section */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.intro p {
+  font-size: 1.2em;
+}
+
+/* About Section */
+.about {
+  padding: 20px;
+}
+
+.about ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.interactive {
+  margin-top: 20px;
+}
+
+.interactive button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.interactive button:hover {
+  background-color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Resume Section */
+.resume {
+  padding: 20px;
+}
+
+.resume h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Projects Section */
+.projects {
+  padding: 20px;
+}
+
+.projects .project {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  background-color: #fafafa;
+}
+
+.projects .project:hover {
+  transform: translateY(-5px);
+}
+
+/* Certifications Section */
+.certifications {
+  padding: 20px;
+  text-align: center;
+}
+
+.certifications .badge {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.certifications .badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.certifications .badge img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
